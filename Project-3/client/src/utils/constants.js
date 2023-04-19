@@ -1,0 +1,2 @@
+export const CLAUSE_INDENT_LEVEL = 700;
+export const SUBCLAUSE_INDENT_LEVEL = 1400;
