@@ -1,0 +1,31 @@
+* {
+    font-family: 'Secular One', sans-serif;
+}
+
+.team-heading {
+    background: #004f15;
+    color: white;
+    font-weight: bold;
+}
+
+.employee-card {
+    min-width: 360px;
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,.0625);
+}
+
+.card-header{
+    background: #067122;
+    color: white;
+}
+
+.card-body {
+    background: #E6E6E6;
+}
+
+body {
+    background: #383838;
+}
+
