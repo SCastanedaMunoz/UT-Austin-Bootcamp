@@ -1,0 +1,108 @@
+header {
+    width: 100%;
+    color: white;
+    background: #343a40;
+    text-align: center;
+    font-weight: bolder;
+    padding: .75em;
+}
+
+.search-holder {
+    padding-right: 15%;
+}
+
+.city-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.city-history {
+    background: #f8f9fa;
+    margin: 0;
+    padding: .25em .75em 1em .75em;
+}
+
+.city-display {
+    padding: .8em .8em 0em .8em;
+}
+
+.no-padding {
+    padding : 0;
+}
+
+.forecast-holder {
+    padding-top: .8em;
+    padding-left: .8em;
+}
+
+.city-forecast {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+.city-forecast > .city-forecast-day {
+    display: inline-block;
+    zoom: 1;
+    margin-top: .75%;
+    margin-right: 1.5%;
+    width: 150px;
+    text-align: left;
+    color: white;
+}
+
+.card-body > .forecast-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.card-body > .forecast-item {
+    padding-bottom : 6%;
+}
+
+.forecast-holder > h4 {
+    margin : 0;
+}
+
+.forecast-body {
+    padding : 8%;
+}
+
+.city-item {
+    padding : .5em 0em;
+}
+
+#city-name {
+    padding : 0;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.btn-danger{
+    padding: 0.3em;
+}
+
+.uv-low {
+    background: #8dc443;
+}
+
+.uv-medium {
+    background: #fdd835;
+}
+
+.uv-high {
+    background: #ffb301;
+}
+
+.uv-very-high {
+    background:#d1394a;
+
+}
+
+.uv-extreme {
+    background: #954f71;
+}
