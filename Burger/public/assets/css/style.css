@@ -1,0 +1,113 @@
+li {
+  padding: 5px;
+  margin: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.label {
+  font-weight: bold;
+}
+
+body {
+    background: #f0c15f;
+}
+
+.img-burger {
+    margin-top: 1em;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+header {
+    text-align: center;
+}
+
+.text-burger {
+    text-align: center;
+
+}
+
+textarea {
+    width: 100%;
+    height: 100%; 
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.h1-burger {
+    font-weight: bolder;
+    color: #c14122;
+}
+
+.p-instructions {
+    font-weight: bold;
+    text-align: center;
+    font-size: 17.5px;
+}
+
+.btn-submit {
+    padding: .7em 2em;
+    margin: .5em 0;
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+.btn-devour {
+    padding: .7em 2em;
+    margin: 0;
+    margin-right: 2em;
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+.ul-btn-devour {
+    padding-left: 0;
+    margin: 0;
+}
+
+.non-devour {
+    background-color: #EEEEEE;
+    padding: .7em 5em;
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 17.5px;
+    font-weight: bolder;
+    border: 2px solid #999999;
+    border-radius: 3.5px;
+}
+
+.devour {
+    color: #999999;
+    background-color: #EEEEEE;
+    padding: .7em 5em;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.5px;
+    font-weight: bolder;
+    border: 2px solid #999999;
+    border-radius: 3.5px;
+}
+
+@media (min-width: 576px) {
+    .text-burger {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .text-burger {
+        padding-left: 37.5%;
+        padding-right: 37.5%;
+    }
+ }
