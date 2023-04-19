@@ -1,0 +1,133 @@
+    html {
+        font-family: 'Changa One', cursive;
+    }
+    
+    body {
+        color: #2e7d32;
+        background-color: #B5B682;
+        text-align: center;
+    }
+    
+    #map {
+        height: 600px;
+        width: 57.5%;
+        margin: 1.25%;
+    }
+    
+    .input-field label {
+        color: #033F63;
+    }
+    
+    .input-field input:focus+label,
+    .materialize-textarea:focus:not([readonly]) {
+        color: #2e7d32 !important;
+    }
+    
+    .row .input-field input:focus,
+    .materialize-textarea:focus:not([readonly]) {
+        border-bottom: 1px solid #2e7d32 !important;
+        box-shadow: 0 1px 0 0 #2e7d32 !important
+    }
+    
+    #info-rest {
+        height: 600px;
+        width: 37.5%;
+        margin: 1.25%;
+        background-color: #FFFAFF;
+        display: block;
+        overflow: auto;
+    }
+    
+    .card {
+        color: black;
+    }
+    
+    .form,
+    .row {
+        margin-bottom: 0px;
+    }
+    
+    .input-field,
+    input {
+        color: white;
+        font-weight: bolder;
+    }
+    
+     ::-webkit-input-placeholder {
+        /* Edge */
+        color: white;
+        opacity: .625;
+    }
+    
+     :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: white;
+        opacity: .625;
+    }
+    
+     ::placeholder {
+        color: white;
+        opacity: .625;
+    }
+    
+    input.valid[type=text]:not(.browser-default) {
+        border-bottom: 1px solid #2e7d32;
+        box-shadow: 0 1px 0 0 #2e7d32;
+    }
+    
+    nav .brand-logo {
+        line-height: none;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    
+    nav .nav-title {
+        font-size: 15px;
+        letter-spacing: 0.5mm;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    /* icon prefix focus color */
+    
+    .input-field .prefix.active {
+        color: #2e7d32;
+    }
+    
+    h3 {
+        font-weight: bolder;
+    }
+    
+    .card-stacked,
+    p {
+        margin: 1%;
+    }
+    
+    .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating),
+    .see-more {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    
+    .card-title {
+        text-shadow: 2px 2px 4px #000000;
+    }
+    
+    .input-field .prefix~label,
+    .input-field .prefix~.validate~label {
+        margin-left: .75em;
+    }
+    
+    #modal-header {
+        color: black;
+    }
+    
+    #modal-content {
+        color: black;
+    }
+    
+    #parallax-container {
+        padding: none;
+        margin: auto;
+    }
+    
+    ul.dropdown-content.select-dropdown li span {
+        color: #2e7d32;
+    }

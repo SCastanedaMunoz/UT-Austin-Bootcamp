@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon Finder</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Voces&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified CSS Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript Materialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Maps API -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI0JkCmRsmKDi_N_SPzDdFfOUizXZdd-Q&callback=initMap"></script>
+</head>
+
+<body>
+    <nav class="nav-extended">
+        <div class="nav-wrapper green darken-3">
+            <a href="#" class="brand-logo center">Falcon Finder</a>
+
+        </div>
+        <div class="nav-content green darken-3">
+            <span style="padding: none" class="nav-title">The best restaurant finder always near you!</span>
+        </div>
+    </nav>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/pexels-fauxels-3184192.jpg"></div>
+    </div>
+    <br>
+    <!--The div element for the map -->
+    <div class="container">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">location_city</i>
+                        <input placeholder="Austin" id="city_name" type="text" class="validate tooltipped" data-position="bottom" data-tooltip="Location for your search! *required*">
+                        <label for="city_name_icon">City</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">restaurant</i>
+                        <input placeholder="Asian" id="query_word" type="text" class="validate tooltipped" data-position="bottom" data-tooltip="Main identifier for your search">
+                        <label for="query_word">Main Category</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">restaurant_menu</i>
+                        <input placeholder="Traditional, Homemade" id="cuisines" type="text" class="validate tooltipped" data-position="bottom" data-tooltip="What kind of food? (comma separated values)">
+                        <label for="cuisines">Cuisines</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">access_time</i>
+                        <input placeholder="Restaurant, Take Out" id="food_type" type="text" class="validate tooltipped" data-position="bottom" data-tooltip="What kind of place? (comma separated values)">
+                        <label for="food_type">Type</label>
+                    </div>
+                    <div class="input-field col s4 tooltipped" data-position="bottom" data-tooltip="How many places?">
+                        <select id="food_count">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                        <label for="food_count">Restaurant Count</label>
+                    </div>
+
+                    <div class="input-field col s4 tooltipped" data-position="bottom" data-tooltip="How far away from your location?">
+                        <select id="distance">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                        <label for="distance">Distance(Miles)</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <button class="waves-effect waves-light btn-small green darken-3" type="button" id="btn-search">Search!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col s6 center-align responsive-table" id="info-rest"></div>
+            <div class="col s6 center-align" id="map"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Modal Structure -->
+    <div id="modal-message" class="modal">
+        <div class="modal-content">
+        <h4 id="modal-header">Error Header</h4>
+        <p id="modal-content">A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-copyright light-green darken-2">
+            <div class="container white-text">
+                Bright Falcons Inc. © Santiago Castaneda Munoz, Brett Boggs, Zachary Yanez
+                <a class="white-text text-lighten-4 right" href="#https://developers.zomato.com/api">Zomato API</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="logic.js"></script>
+
+</html>
