@@ -1,0 +1,119 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 17px;
+  }
+
+
+hr {
+    border-top: 1.5px solid gray;
+    color : gray;
+    opacity: 0.8;
+}
+
+
+h1 {
+    text-align: left;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+header h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 0.2em;
+}
+
+#ques-content {
+    text-align: left;
+}
+
+#ques-content h1{
+    text-align: left;
+    font-size: 30px;
+}
+
+#highscores {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 1em;
+    clear: both;
+    color: purple;
+}
+
+#timer {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    clear: both;
+}
+
+#highscore-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.highscore {
+    text-align: left;
+    font-weight: bold;
+    padding: 0.25em 1em;
+    color: white;
+    border-radius: 5px;
+}
+
+.peach {
+    background-color: #F81498;
+}
+
+.orchid {
+    background-color: #3314F8;
+}
+
+.btn-purple {
+    background-color: purple;
+    border-color: purple;
+    color:white;
+    font-weight: bold;
+    padding: 3px 6px;
+}
+
+.nav-container {
+    position: relative;
+    width: 100%;
+    margin-top: .5em;
+    font-size: 24px;
+    height: 40px;
+    font-weight: bolder;
+}
+
+.submit-field {
+    text-align: left;
+}
+
+.fader {
+    animation: cssAnimation 1s forwards;
+}
+
+.fader h3 {
+    font-weight: bold;
+    text-align: left;
+    color : gray;
+    opacity: 0.8;
+}
+
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    99% {opacity: 1;}
+    100% {opacity: 0;}
+}
