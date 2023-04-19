@@ -1,0 +1,4 @@
+models/index.js
+node_modules
+public/assets/js/covid.js
+public/assets/js/maps.js

@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(65, 65, 65);
+  font-family: Quicksand;
+  color: white;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 2px 2px black;
+  font-family: Quicksand;
+}
+
+header,
+form {
+  color: white;
+  font-family: Quicksand;
+}
+
+.btn {
+  align-content: center;
+  background-color: rgb(124, 0, 0);
+  border: rgb(124, 0, 0);
+  margin: auto;
+  padding: auto;
+  font-family: Quicksand;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  background-color: rgb(179, 0, 0);
+  border-color: rgb(179, 0, 0); /*set the color you want here*/
+}
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: Quicksand;
+}
+body,
+.map-container {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+  font-family: Quicksand;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+  font-family: Quicksand;
+}
+
+.form-group {
+  text-shadow: 1px 2px 2px black;
+  font-family: Quicksand;
+}
+
+#reportImg {
+  margin-top: 80px;
+  width: 100%;
+  height: 75%;
+  box-shadow: black;
+}

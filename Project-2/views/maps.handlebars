@@ -1,0 +1,65 @@
+<div id="mdb-preloader" class="flex-center">
+    <div id="preloader-markup">
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-center">Visual Map</h1>
+    <p class="lead text-center">Filter by COVID-19 Status, Age, Gender, and Blood Type.</p>
+  </div>
+</div>
+<div class="container-fluid map-container">
+    <form>
+        <div class="form-row justify-content-md-center">
+            <div class="form-group col-4 text-center">
+                <label for="status">COVID-19 Status</label>
+                <select class="form-control" id="status">
+                    <option>Infected</option>
+                    <option>Not Infected</option>
+                    <option>Previously Infected</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row justify-content-md-center">
+            <div class="form-group col-2 text-center">
+                <label for="condition">Filters</label>
+                <select class="form-control" id="condition">
+                    <option value="">Select a Filter</option>
+                    <option value="age">Age</option>
+                    <option value="gender">Gender</option>
+                    <option value="bloodType">Blood Type</option>
+                </select>
+            </div>
+
+            <div class="form-group col-2 text-center">
+                <label for="condition">Filter Options</label>
+                <select class="form-control" id="condition-value" readonly="">
+                    <option value="">Select a Filter</option>
+                </select>
+            </div>
+        </div>
+
+    </form>
+
+    <div id="map"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <button type="submit" class="btn btn-danger btn-submit col-2" data-toggle="modal" data-target="#exampleModal">Visualize Map!</button>
+            </div>
+        </div>
+    </div>
+
+
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+
+
+    {{!-- Linked Files! --}}
+    <link rel="stylesheet" href="./assets/css/maps.css">
+
+    <script src="./assets/js/maps.js"></script>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI0JkCmRsmKDi_N_SPzDdFfOUizXZdd-Q&callback=initMap&libraries=places"></script>
+</div>

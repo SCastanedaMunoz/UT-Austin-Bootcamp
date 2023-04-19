@@ -1,0 +1,95 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-center">Self-Report</h1>
+    <p class="lead text-center">Anonymously report information related to your COVID-19 result.</p>
+  </div>
+</div>
+<div class="container-fluid">
+    <form>
+        <div class="form-row justify-content-md-center">
+            <div class="form-group col-md-3">
+                <label for="status">COVID-19 Status</label>
+                <select class="form-control px-md-4" id="status">
+                    <option>Infected</option>
+                    <option>Not Infected</option>
+                    <option>Previously Infected</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="blood-type">Blood-Type</label>
+                <select class="form-control px-md-4" id="blood-type">
+                    <option value="null">Unknown</option>
+                    <option>A-</option>
+                    <option>A+</option>
+                    <option>B-</option>
+                    <option>B+</option>
+                    <option>O-</option>
+                    <option>O+</option>
+                    <option>AB-</option>
+                    <option>AB+</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row justify-content-md-center">
+            <div class="form-group col-md-3">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender">
+                    <option value="null">Choose Not To Disclose</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Non-Binary</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="age">Age Group</label>
+                <select class="form-control" id="age">
+                    <option>3 - 18</option>
+                    <option>19 - 30</option>
+                    <option>30 - 55</option>
+                    <option>55+</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row justify-content-md-center">
+            <div class="form-group col-md-2">
+                <label for="age">Country</label>
+                <select name="country" class="countries form-control" id="countryId" required>
+                    <option value="">Select Country</option>
+                </select>
+                <div class="invalid-feedback">Please choose a country.</div>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="age">State</label>
+                <select name="state" class="states form-control" id="stateId" required>
+                    <option value="">Select State</option>
+                </select>
+                <div class="invalid-feedback">Please choose a state.</div>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="age">City</label>
+                <select name="city" class="cities form-control" id="cityId" required>
+                    <option value="">Select City</option>
+                </select>
+                <div class="invalid-feedback">Please choose a city.</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <button type="submit" class="btn btn-danger btn-submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="places-service"></div>
+</div>
+
+</body>
+<img src="./assets/images/Report2.jpg" id="reportImg">
+<script src="./assets/js/covid.js"></script>
+<script src="//geodata.solutions/includes/countrystatecity.js"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI0JkCmRsmKDi_N_SPzDdFfOUizXZdd-Q&libraries=places"></script>
